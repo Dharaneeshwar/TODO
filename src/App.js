@@ -141,6 +141,8 @@ class App extends React.Component {
                     </div>
                   </div>
                 );
+              } else {
+                return("");
               }
             })}
           </div>
@@ -174,6 +176,8 @@ class App extends React.Component {
                     </div>
                   </div>
                 );
+              } else {
+                return("");
               }
             })}
           </div>
