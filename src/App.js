@@ -83,7 +83,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="container mx-auto">
+      <div className="container mx-auto pb-3">
         <div className="d-flex mt-3">
           <img src={logo} width="100" className="mx-auto" height="100" alt="logo" />
         </div>
@@ -148,7 +148,7 @@ class App extends React.Component {
           </div>
           <p className="complete text-muted mt-2">Completed</p>
           <div className="list">
-            {this.state.list.reverse().map(item => {
+            {this.state.list.map(item => {
               if (item.isDone && (!this.state.isCollapseDone)) {
                 return (
                   <div className="input-group mb-2" key={item.id}>
