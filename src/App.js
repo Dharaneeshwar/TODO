@@ -113,7 +113,7 @@ class App extends React.Component {
           <p className="complete text-muted mt-2"   
           >Pending</p>
           <div className="list">
-            {this.state.list.map(item => {
+            {this.state.list.sort((a, b) => (parseInt(a.id) < parseInt(b.id)) ? 1 : -1).map(item => {
               if (!item.isDone && !this.state.isCollapsePending) {
                 return (
                   <div className="input-group mb-2" key={item.id}>
