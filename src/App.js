@@ -10,7 +10,21 @@ class App extends React.Component {
     const local = localStorage.getItem('data');
     this.state = local?JSON.parse(local):{
       newItem: "",
-      list: [],
+      list: [{
+        id: 1,
+        value: "You can create a simple task like this",
+        isDone: false
+      },
+      {
+        id: 2,
+        value: "Like this too",
+        isDone: false
+      },
+      {
+        id: 3,
+        value: "You can check the done tasks",
+        isDone: true
+      }],
       isCollapsePending: false,
       isCollapseDone: false
     };
